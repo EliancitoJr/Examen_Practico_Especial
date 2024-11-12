@@ -1,0 +1,961 @@
+
+/* Estilos generales para la pagina */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la pagina */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #47474e;
+}
+
+/* Estilos globales para los enlaces */
+a:link,
+a:visited {
+    color: #47474e;
+    text-decoration: none;
+}
+
+/* Tipografias especificas para distintas secciones */
+
+header,
+footer {
+    font-family: 'Chivo', sans-serif;
+}
+
+.hero {
+    font-family: 'Chivo', sans-serif;
+}
+
+.tips {
+    font-family: 'Chivo', sans-serif;
+}
+
+
+.bike-paint-section {
+    font-family: 'Chivo', sans-serif;
+}
+
+
+.stats-section {
+    font-family: 'Chivo', sans-serif;
+}
+
+
+.feedback {
+    font-family: 'Chivo', sans-serif;
+}
+
+/* Estilos del Header */
+header {
+    width: 100%;
+    padding: 8px 98px;
+    background: white;
+    border-bottom: 1px solid #DEE5ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del logo en el header y footer */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos del logo en el header */
+.bike-logo {
+    width: 40px;
+    height: 38px;
+    background-image: url('resources/logo_bicicleta.png');
+    background-size: cover;
+}
+
+/* Estilos del texto del logo en el header y footer */
+.logo-text {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Color del texto del logo en el header y footer */
+header .logo-text {
+    color: #47474e; /* Color oscuro para fondo claro */
+}
+
+/* Color del texto del logo en el header y footer */
+footer .logo-text {
+    color: white; /* Color claro para fondo oscuro */
+}
+
+/* Estilos de navegacion */
+nav {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+/* Estilos de los enlaces de navegacion */
+nav a {
+    color: #47474e;
+    font-size: 16px;
+    text-decoration: none;
+}
+/* Cambia el color de los enlaces de navegacion al pasar el cursor */
+nav a:hover {
+    color: #c5c5c5;
+}
+
+/* Cambia el color del boton de llamada a la accion al pasar el cursor */
+.cta-button:hover {
+    background: #c5c5c5;
+    color: white;
+}
+
+
+/* Botón de llamada a la accion */
+.cta-button,
+.cta-button:visited,
+.cta-button:hover,
+.cta-button:active {
+    padding: 12px 20px;
+    background: #47474e;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+/* Cambia el color del boton de llamada a la accion al pasar el cursor */
+.cta-button:hover {
+    background: #c5c5c5;
+    color: #ffffff;
+}
+
+/* Estilos de la seccion Hero */
+.hero {
+    padding: 120px 0;
+    text-align: center;
+    background-color: #f3f2f2;
+}
+
+/* Estilos del titulo y parrafo de la seccion Hero */
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* Estilos del parrafo de la seccion Hero */
+.hero p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* Estilos del grupo de botones de la seccion Hero */
+.button-group {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Estilos del boton de llamada a la accion en la seccion Hero */
+.supported-by {
+    color: #000000;
+    font-size: 21px;
+    margin-top: 20px;
+}
+
+/* Logos de marcas */
+.logos {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+/* Estilos de los logos de marcas */
+.bike-logo1,
+.bike-logo2,
+.bike-logo3 {
+    width: 120px;
+    height: 100px;
+    background-size: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave para el efecto */
+}
+
+/* Imagenes de los logos de marcas */
+.bike-logo1 {
+    background-image: url("resources/marca_1.png");
+}
+
+.bike-logo2 {
+    background-image: url("resources/marca_2.png");
+}
+
+.bike-logo3 {
+    background-image: url("resources/marca_3.png");
+}
+
+/* Efecto de hover en los logos de marcas */
+.bike-logo1:hover,
+.bike-logo2:hover,
+.bike-logo3:hover {
+    transform: scale(1.15); /* Agranda el logo */
+}
+
+
+/* Estilos de la seccion Tips */
+.tips {
+    padding: 120px 112px;
+}
+
+/* Estilos del titulo de la seccion Tips */
+.tips h2 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+/* Estilos de los consejos de la seccion Tips */
+.bike-tip {
+    display: flex;
+    gap: 64px;
+    margin-bottom: 64px;
+}
+
+/* Estilos del contenido de los consejos de la seccion Tips */
+.bike-tip-content {
+    flex: 1;
+}
+
+/* Estilos del titulo y parrafo de los consejos de la seccion Tips */
+.bike-tip-content h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Estilos del parrafo de los consejos de la seccion Tips */
+.bike-tip-content p {
+    font-size: 20px;
+    color: #3e3e3e;
+}
+
+/* Imagenes de tips con efecto de hover */
+.bike-tip-image1,
+.bike-tip-image2,
+.bike-tip-image3 {
+    flex: 1;
+    border-radius: 24px;
+    height: 300px;
+    background-size: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave */
+}
+
+/* Efecto de hover en las imagenes de tips */
+.bike-tip-image1:hover,
+.bike-tip-image2:hover,
+.bike-tip-image3:hover {
+    transform: scale(1.05); /* Agranda la imagen */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+}
+
+/* Imagenes de tips */
+.bike-tip-image1 {
+    background-image: url("resources/tip_1.jpg");
+}
+
+.bike-tip-image2 {
+    background-image: url("resources/tip_2.jpg");
+}
+
+.bike-tip-image3 {
+    background-image: url("resources/tip_3.jpg");
+}
+
+
+/* Estilos de la seccion de Pintura */
+.bike-paint-section {
+    padding: 120px 112px;
+    display: flex;
+    gap: 64px;
+    background-color: #f2f3f6;
+}
+
+/* Estilos del contenido de la seccion de Pintura */
+.bike-paint-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Estilos del titulo y parrafo de la seccion de Pintura */
+.bike-paint-title {
+    color: #3d89c0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos del parrafo de la seccion de Pintura */
+.bike-paint-description {
+    color: #a3cdef;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+
+/* Imagenes de pintura */
+.bike-paint-image1,
+.bike-paint-image2,
+.bike-paint-image3 {
+    flex: 1;
+    border-radius: 24px;
+    height: 300px;
+    background-size: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave */
+}
+
+/* Animacion al pasar el cursor */
+.bike-paint-image1:hover,
+.bike-paint-image2:hover,
+.bike-paint-image3:hover {
+    transform: scale(1.05); /* Agranda la imagen */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra para resaltarla */
+}
+
+/* Imagenes de pintura */
+.bike-paint-image1 {
+    background-image: url("resources/container_1.jpg");
+}
+
+.bike-paint-image2 {
+    background-image: url("resources/container_2.jpg");
+}
+
+.bike-paint-image3 {
+    background-image: url("resources/container_3.jpg");
+}
+
+
+/* Estilos de la seccion de Estadísticas */
+.stats-section {
+    padding: 120px 112px;
+    display: flex;
+    gap: 120px;
+    background-color: #f6fbf5;
+}
+
+/* Estilos del contenedor de estadisticas */
+.stats-container {
+    flex: 1;
+    display: flex;
+    gap: 24px;
+}
+
+/* Efecto de hover en las cajas de estadisticas */
+.stat-box {
+    flex: 1;
+    padding: 32px;
+    border-radius: 24px;
+    background: #d9f1d9;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave */
+}
+
+/* Efecto de hover en las cajas de estadisticas */
+.stat-box:hover {
+    transform: scale(1.05); /* Agranda la caja */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+}
+
+/* Estilos del numero y descripcion de las estadisticas */
+.stat-number {
+    color: #68bd4c;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos de la descripcion de las estadisticas */
+.stat-description {
+    color: #3d6c20;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilos de la seccion de Feedback */
+.feedback {
+    padding: 120px 112px;
+    background-color: #faf9f8;
+}
+
+/* Estilos del titulo de la seccion de Feedback */
+.feedback h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/* Efecto de hover en los items de feedback */
+.feedback-item {
+    padding: 32px;
+    border-radius: 24px;
+    background: #f6f3ef;
+    margin-bottom: 32px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transicion suave */
+}
+
+/* Efecto de hover en los items de feedback */
+.feedback-item:hover {
+    transform: scale(1.05); /* Agranda el item de feedback */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra */
+}
+
+/* Estilos del bloque de feedback */
+.feedback-item blockquote {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* Estilos del parrafo de feedback */
+.feedback-item p {
+    font-size: 20px;
+    color: #d69573;
+}
+
+/* Estilos de las estrellas de feedback */
+.stars {
+    color: gold;
+    font-size: 24px;
+}
+
+
+/* Estilos del Footer */
+footer {
+    width: 100%;
+    padding: 60px 112px;
+    background: #46464d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos del logo en el footer */
+.footer-logo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Estilos del logo en el footer */
+.footer-logo-image {
+    width: 40px;
+    height: 38px;
+    background-image: url('resources/logo_bicicleta.png');
+    background-size: cover;
+}
+
+/* Estilos de los enlaces del footer */
+.footer-links {
+    display: flex;
+    gap: 64px;
+}
+
+/* Estilos de los enlaces del footer */
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos de los titulos de los enlaces del footer */
+.footer-links h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Estilos de los enlaces del footer */
+.footer-links a {
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transicion suave al cambiar de color */
+}
+
+/* Cambia el color de los enlaces del footer al pasar el cursor */
+.footer-links a:hover {
+    color: #c5c5c5; /* Nuevo color para el hover en los enlaces */
+}
+
+
+/* Estilos para la pagina de consejos */
+.tips-page {
+    padding: 60px 112px;
+    font-family: 'Chivo', sans-serif;
+}
+
+/* Estilos para el titulo de la pagina de consejos */
+.tips-page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #47474e;
+}
+
+/* Estilos para los items de consejos */
+.tip-item {
+    margin-bottom: 60px;
+}
+
+/* Estilos para el titulo y parrafo de los items de consejos */
+.tip-item h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #47474e;
+    margin-bottom: 16px;
+}
+
+/* Estilos para el parrafo de los items de consejos */
+.tip-item p {
+    font-size: 18px;
+    color: #3e3e3e;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imagenes de los items de consejos */
+.tip-item img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Estilos para la pagina de pinturas */
+.paint-page {
+    padding: 60px 112px;
+    font-family: 'Chivo', sans-serif;
+    text-align: center;
+}
+
+/* Estilos para el titulo y parrafo de la pagina de pinturas */
+.paint-page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #3d89c0;
+}
+
+/* Estilos para el parrafo de la pagina de pinturas */
+.paint-page p {
+    font-size: 20px;
+    color: #a3cdef;
+    margin-bottom: 40px;
+}
+
+/* Estilos para la galeria de pinturas */
+.paint-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Estilos para los items de pinturas */
+.paint-item {
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilos para las imagenes de los items de pinturas */
+.paint-item img {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animacion de escala en hover */
+.paint-item img:hover {
+    transform: scale(1.15); /* Agranda la imagen un 5% */
+    box-shadow: 4px 15px rgba(0, 0, 0, 0.2); /* Añade sombra al hacer hover */
+}
+
+/* Estilos para el titulo y parrafo de los items de pinturas */
+.paint-item h3 {
+    font-size: 24px;
+    color: #3d89c0;
+    margin-bottom: 8px;
+}
+
+/* Estilos para el parrafo de los items de pinturas */
+.paint-item p {
+    font-size: 16px;
+    color: #47474e;
+}
+
+/* Estilos para la seccion del formulario */
+.form-section {
+    padding: 60px 112px;
+    font-family: 'Chivo', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Estilos para el titulo de la seccion del formulario */
+.form-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #47474e;
+    text-align: center;
+}
+
+/* Estilos para el formulario */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para las etiquetas del formulario */
+.contact-form label {
+    font-size: 18px;
+    color: #47474e;
+}
+
+/* Estilos para los campos del formulario */
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Chivo, sans-serif;
+}
+
+/* Estilos para los campos del formulario al tener el foco */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #47474e;
+    outline: none;
+}
+
+/* Estilos para el boton de envio del formulario */
+.submit-button {
+    padding: 12px 20px;
+    background: #47474e;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Cambia el color del boton de envio del formulario al pasar el cursor */
+.submit-button:hover {
+    background: #3e3e3e;
+}
+
+/* Estilos para las paginas legales */
+.legal-page {
+    padding: 60px 112px;
+    font-family: 'Chivo', sans-serif;
+}
+
+/* Estilos para el titulo y parrafo de las paginas legales */
+.legal-page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #47474e;
+}
+
+/* Estilos para el parrafo de las paginas legales */
+.legal-page p {
+    font-size: 16px;
+    color: #3e3e3e;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la pagina de error */
+.error-page {
+    padding: 60px 112px;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+}
+
+/* Estilos para el titulo y parrafo de la pagina de error */
+.error-page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #bd4848;
+}
+
+/* Estilos para el parrafo de la pagina de error */
+.error-page p {
+    font-size: 20px;
+    color: #47474e;
+    margin-bottom: 40px;
+}
+
+/* Estilos para el video de la pagina de error */
+.error-video {
+    margin-bottom: 40px;
+}
+
+/* Estilos para el video de la pagina de error */
+.error-video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+}
+
+/* Estilos para el boton de llamada a la accion en la pagina de error */
+.error-page .cta-button {
+    padding: 12px 20px;
+    background: #47474e;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilos para la pagina de historia */
+.history-page {
+    padding: 60px 112px;
+    font-family: 'Chivo', sans-serif;
+    text-align: center;
+}
+
+/* Estilos para el titulo y parrafo de la pagina de historia */
+.history-page h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #47474e;
+}
+
+/* Estilos para el parrafo de la pagina de historia */
+.history-page p {
+    font-size: 20px;
+    color: #3e3e3e;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+/* Estilos para las imagenes de la pagina de historia */
+.history-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Media Queries para dispositivos moviles */
+
+/* Estilos para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+    /* Ajustes en el header */
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .logo {
+        margin-bottom: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .cta-button {
+        padding: 10px 16px;
+        font-size: 18px;
+    }
+
+    /* Ajustes en la seccion Hero */
+    .hero {
+        padding: 80px 16px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    /* Ajustes en la seccion Tips */
+    .tips {
+        padding: 80px 16px;
+    }
+
+    .tips h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .bike-tip {
+        flex-direction: column;
+    }
+
+    .bike-tip-image1,
+    .bike-tip-image2,
+    .bike-tip-image3 {
+        height: 200px;
+    }
+
+    /* Ajustes en la seccion de Pintura */
+    .bike-paint-section {
+        padding: 80px 16px;
+        flex-direction: column;
+    }
+
+    .bike-paint-title {
+        font-size: 48px;
+    }
+
+    .bike-paint-description {
+        font-size: 18px;
+    }
+
+    .bike-paint-image1,
+    .bike-paint-image2,
+    .bike-paint-image3 {
+        height: 200px;
+        margin-bottom: 16px;
+    }
+
+    /* Ajustes en la seccion de Estadísticas */
+    .stats-section {
+        padding: 80px 16px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .stat-box {
+        padding: 24px;
+    }
+
+    .stat-number {
+        font-size: 48px;
+    }
+
+    .stat-description {
+        font-size: 18px;
+    }
+
+    /* Ajustes en la seccion de Feedback */
+    .feedback {
+        padding: 80px 16px;
+    }
+
+    .feedback h2 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .feedback-item {
+        padding: 24px;
+    }
+
+    .feedback-item blockquote {
+        font-size: 24px;
+    }
+
+    .feedback-item p {
+        font-size: 18px;
+    }
+
+    /* Ajustes en el footer */
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 16px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 24px;
+    }
+
+    .footer-links div {
+        margin-bottom: 16px;
+    }
+
+    .footer-links h3 {
+        font-size: 18px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+    /* Ajustes en paginas especificas */
+    .tips-page,
+    .paint-page,
+    .form-section,
+    .legal-page,
+    .history-page {
+        padding: 40px 16px;
+    }
+
+    .tips-page h1,
+    .paint-page h1,
+    .form-section h1,
+    .legal-page h1,
+    .history-page h1 {
+        font-size: 36px;
+    }
+
+    .tip-item img,
+    .paint-item img {
+        width: 100%;
+    }
+}
+
+/* Estilos para pantallas de hasta 480px de ancho*/
+@media (max-width: 480px) {
+    .tips-page h1,
+    .paint-page h1,
+    .form-section h1,
+    .legal-page h1,
+    .history-page h1 {
+        font-size: 28px;
+    }
+
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+}
